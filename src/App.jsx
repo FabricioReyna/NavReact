@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import './App.css'
+import CartIcon from './components/cart-icon/CartIcon'
+import CartWidget from './components/cart-icon/cartwidget'
 import Under from './components/nav'
 import Search from './components/Search'
 import imgAmazo from "./media/flati.svg"
 function App() {
-  const [count, setCount] = useState(0)
+
+  const [isOpenWidget, setOpenWidget] = useState(false);
 
   return (
     <div className="App">
@@ -14,8 +17,14 @@ function App() {
         <Under />
     
       <Search />
-      
+    <button className='px-5 py-4  rounded-md hover:bg-[#C2D9E0]' onClick={() => setOpenWidget(!isOpenWidget)}>
+        <CartIcon className="fill-white"/>
+        </button>
+        {
+          isOpenWidget && <CartWidget />
+        }
       </div>
+   
       </header>
     </div>
   )

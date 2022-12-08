@@ -10,7 +10,7 @@ const Search = () => {
         <span>Incia Sesion</span>
         <button>Regístrate</button>
       </div>
-  
+        
     </div>
   );
 };
