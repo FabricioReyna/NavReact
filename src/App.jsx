@@ -5,6 +5,11 @@ import CartWidget from './components/cart-icon/cartwidget'
 import Under from './components/nav'
 import Search from './components/Search'
 import imgAmazo from "./media/flati.svg"
+import CardProduct from './components/card-prodcut/CardProduct'
+import { PRODUCTS } from './components/card-prodcut/data/productos'
+
+
+
 function App() {
 
   const [isOpenWidget, setOpenWidget] = useState(false);
@@ -26,6 +31,12 @@ function App() {
       </div>
    
       </header>
+
+      <main>
+        {PRODUCTS.map((product) =>(
+          <CardProduct product={product} key={product.name} />
+        ))}
+      </main>
     </div>
   )
 }
