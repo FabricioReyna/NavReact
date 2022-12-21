@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './style.css'
 import Under from '../../components/nav'
 import Search from '../../components/Search'
@@ -6,8 +7,10 @@ import CardProduct from '../../components/card-prodcut/CardProduct'
 import { PRODUCTS } from '../../components/card-prodcut/data/productos'
 
 
+
 const Home = () => {
 
+  const [isOpenWidget, setOpenWidget] = useState(false);
 
   return (
     
@@ -15,7 +18,7 @@ const Home = () => {
       <header>
         <div className="dat">
         <img src={imgAmazo} alt="a" className='HomeImg' />
-        <Under />
+        <Under/>
     
       <Search />
     
@@ -35,4 +38,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Home;
