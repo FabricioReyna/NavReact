@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 
 const CartWidget = () => {
     return(
@@ -19,9 +21,11 @@ const CartWidget = () => {
             </div>
           </div>
           <div className="px-6 pb-8">
+          <Link to={'/cart'}>   
             <button className="w-full rounded-md bg-blue-500 py-4 text-white transition-all hover:bg-blue-700">
-              Comprar
+           Ir Al Carrito 
             </button>
+            </Link>
           </div>
         </section>
       </section>
