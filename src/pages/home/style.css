@@ -82,7 +82,6 @@
   main .title-prin:hover{
     color: cornsilk;
     text-decoration: underline;
-    transform: scale(2.3);
     cursor: pointer;
   }
   
