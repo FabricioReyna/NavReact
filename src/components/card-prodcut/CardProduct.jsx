@@ -1,9 +1,9 @@
 import "./style.css";
-const cardProduct = ({ product }) => {
+const cardProduct = ({ product, onSelect }) => {
   const { id, descripcion, titulo, imagen, precio, stock } = product;
 
   return (
-    <div className="card">
+    <div className="card" onClick={ () => onSelect(product) }>
       <div className="fila">
         <div className="col">
           <img src={imagen} alt={titulo} />

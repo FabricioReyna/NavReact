@@ -1,0 +1,20 @@
+.Detail-cotanier{
+    border: 10px solid black;
+    text-align: center;
+}
+.Detail-cotanier h1{
+    font-size: 2em;
+    transform: translateY(50%);
+}
+.Detail-cotanier .card-detail{
+    border: 1px solid black;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Detail-cotanier .card-Product{
+    border: 1px solid black;
+}
