@@ -1,19 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@100;200;300;400&display=swap");
 
 .card {
-  background: #c1d4d7;
+
   height: 100vh;
   min-height: fit-content;
   font-family: 'Chivo Mono', monospace;
-  display: grid;
+  display: flex;
 }
 .card .fila {
+  max-width: 1000px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
   text-align: center;
+  flex: 1;
 }
+
 .card .fila .col {
   border-radius: 10px;
   background: #fff;
@@ -22,11 +26,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 20px;
   cursor: pointer;
   transition: 0.5s;
+  max-width: 500px;
 }
-
+.card .fila .col:hover{
+  height: 85%;
+}
 
 .card .fila .col .card-content {
   height: 50%;

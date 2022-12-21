@@ -1,17 +1,32 @@
+import { data } from "autoprefixer";
+import { useState } from "react";
+import { useEffect } from "react";
+import CartIcon from "./cart-icon/CartIcon";
+import CartWidget from "./cart-icon/cartwidget";
+import { URL_BASE, URL_ENDPOINTS } from "./fetch/fetch";
+import { useFetch } from "./fetch/useFetch";
+
+
+
 
 const Search = () => {
-  return (
+  const [isOpenWidget, setOpenWidget] = useState(false);
+  const {data: user , error, loading } = useFetch(`${URL_BASE}${URL_ENDPOINTS.USERS}`)
+  return ( 
     <div className="search-top">
-      <div className="img">
-        <img src="src\media\197593.png" alt="" className="img-w" />
-      </div>
-      <div className="span">
-        <span>Planes y Precios</span>
-        <span>Incia Sesion</span>
-        <button>Regístrate</button>
+      <div className="avatar">
+        <img className="avatar-a" src={user?.avatar} alt={user?.name} />
       </div>
         
+    <button className='a' onClick={() => setOpenWidget(!isOpenWidget)}>
+    <CartIcon className="fill-white"/>
+    </button>
+
+    {
+      isOpenWidget && <CartWidget />
+    }
     </div>
+
   );
 };
 export default Search;

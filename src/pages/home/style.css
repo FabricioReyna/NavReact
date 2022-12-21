@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .dat{
+    display: flex;
+    flex-direction: wrap;
+    background: #0B2239;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
+  .dat .HomeImg{
+    width: 200px;
+  }
+  .nav{
+    width: 50%;
+  }
+  .nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+  }
+  .nav ul li a, .nav ul li select option{
+    text-decoration: none;
+    color: #C2D9E0;
+  }
+  .nav ul li a:hover{
+    text-decoration: underline;
+  }
+  .nav ul li select{
+    background: none;
+    padding: 10px;
+    color: #C2D9E0;
+    border: none;
+  }
+  .img-w{
+    width: 50px;
+    height: 50px;
+  }
+  .search-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  .search-top .avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin-right: 30px;
+  }
+  .search-top .avatar .avatar-a{
+    border-radius: 100%;
+    border: 3px solid #000;
+    -webkit-box-shadow: 0 0 50px 20px rgba(0,0,0,0.6);
+  box-shadow: 0 0 50px 20px rgba(0,0,0,0.6);
+  
+  }
+  main{
+  
+  background: linear-gradient(
+    to top,
+    rgba(30, 35, 38, 0.8),
+    rgba(30, 35, 38, 1)
+  ) , fixed url("/src/media/Fondo.jpg")  ;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  }
+  main .title-prin{
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    padding-top: 20px;
+    text-transform: uppercase;
+    transition: 2s;
+  }
+  main .title-prin:hover{
+    color: cornsilk;
+    text-decoration: underline;
+    transform: scale(2.3);
+    cursor: pointer;
+  }
+  
+  .contenido-main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
