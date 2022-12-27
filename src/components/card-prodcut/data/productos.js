@@ -1,7 +1,8 @@
 export const PRODUCTS = 
   [{
     id: 1,
-    titulo: "Iconos Solidos",
+    categoriaid: "Solidos",
+  titulo: "Iconos Solidos",
     imagen: "../src/media/PackIconos.png",
     descripcion:" Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     precio: 2120,
@@ -10,7 +11,8 @@ export const PRODUCTS =
 {
   id: 2,
 
-    titulo: "Iconos Gifs",
+  categoriaid: "Gifs",
+  titulo: "Iconos Gifs",
     imagen: "../src/media/PackIconos.png",
     descripcion:" Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     precio: 3120,
@@ -19,7 +21,8 @@ export const PRODUCTS =
 {
   id: 3,
 
-    titulo: "Stickers",
+  categoriaid: "Stickers",
+  titulo: "Stickers",
     imagen: "../src/media/PackIconos.png",
     descripcion:" Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     precio: 1120,
@@ -28,6 +31,7 @@ export const PRODUCTS =
 },
 {
   id: 4,
+  categoriaid: "Solidos",
   titulo: "Iconos Solidos",
   imagen: "../src/media/PackIconos.png",
   descripcion:" Lorem ipsum dolor sit amet consectetur adipisicing elit.",
@@ -37,7 +41,8 @@ export const PRODUCTS =
 {
 id: 5,
 
-  titulo: "Iconos Gifs",
+categoriaid: "Gifs",
+titulo: "Iconos Gifs",
   imagen: "../src/media/PackIconos.png",
   descripcion:" Lorem ipsum dolor sit amet consectetur adipisicing elit.",
     precio: 1020,
@@ -45,6 +50,7 @@ id: 5,
 },
 {
 id: 6,
+categoriaid: "Stickers",
 
   titulo: "Stickers",
   imagen: "../src/media/PackIconos.png",

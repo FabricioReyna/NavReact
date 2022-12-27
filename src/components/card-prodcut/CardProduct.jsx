@@ -1,6 +1,9 @@
+
 import "./style.css";
+
 const cardProduct = ({ product, onSelect }) => {
-  const { id, descripcion, titulo, imagen, precio, stock } = product;
+  const { id, categoriaid, descripcion, titulo, imagen, precio, stock } = product;
+  console.log(cardProduct)
 
   return (
     <div className="card" onClick={ () => onSelect(product) }>
@@ -12,7 +15,7 @@ const cardProduct = ({ product, onSelect }) => {
             <p className="card-descrip">{descripcion}</p>
             <span className="card-price">$ {precio}</span>
             <span className="card-stocks">{stock} Stocks</span>
-            <button className="card-button">Comprar</button>
+            <button className="card-button" >Comprar</button>
           </div>
           <div className="stocks">
             <span className="card-plus">+</span>

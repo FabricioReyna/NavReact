@@ -5,10 +5,8 @@
   height: 100vh;
   min-height: fit-content;
   font-family: 'Chivo Mono', monospace;
-  display: flex;
 }
 .card .fila {
-  max-width: 1000px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -16,10 +14,11 @@
   height: 100%;
   text-align: center;
   flex: 1;
+
 }
 
 .card .fila .col {
-  border-radius: 10px;
+  border-radius: 40px;
   background: #fff;
   height: 75%;
   display: flex;
@@ -27,17 +26,44 @@
   align-items: center;
   justify-content: space-evenly;
   cursor: pointer;
-  transition: 0.5s;
-  max-width: 500px;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+
 }
+.card .fila .col::before{
+  content: "";
+  top: 0;
+  left: 50;
+  width: 100%;
+  height: 190px;
+  z-index: -1;
+  background: #c48835;
+  border-bottom: 2px solid #000;
+  position: absolute;
+    border-top-right-radius: 40px;
+    border-top-left-radius: 40px;
+}
+  .card .fila .col::after{
+    content: "";
+    bottom: 0;
+    left: 50;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    background: #ddeba9;
+    height: 90px;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
 
 .card .fila .col .card-content {
-  height: 50%;
-  width: 70%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  padding: 0px 10px;
 }
 .card .fila .col .card-content .card-title {
   font-size: 2em;
@@ -112,6 +138,8 @@
 }
 .card .fila .col .stocks input{
     cursor: pointer;
+    width: 50%;
+    background: transparent;
 }
 .card .fila .col .stocks input::placeholder{
     text-align: center;
