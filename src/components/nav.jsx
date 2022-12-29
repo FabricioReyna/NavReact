@@ -3,24 +3,24 @@ import { Link } from "react-router-dom";
 import { PRODUCTS } from "./card-prodcut/data/productos";
 const Under = () => {
     const [data, setData] = useState(PRODUCTS)
-    const filterResult = (CardProduct) =>{
-      const Result =  PRODUCTS.filter((data) => {
-        return data.categoriaid === CardProduct;
+    const filterResult = (cardItem) =>{
+      const Result =  PRODUCTS.filter((cardItem) => {
+        return cardItem.categoriaid === cardItem;
       })
       setData(Result)
       
     }
+    console.log( PRODUCTS)
 {/* <Link to={"/categoria"}> Iconos Solidos</Link> */}
     return(<>
 
    
     <nav className="nav">
       <ul>
-        <li > <button  onClick={() => {
-          filterResult("Solidos")
-        }}>Solidos</button> </li>
-        <li><a href="#">Stickers</a></li>
-        <li><a href="#">Iconos Gifs</a></li>
+        <li> <Link to={"./"}>Inicio</Link></li>
+        <li > <Link  to={"./categoria"}>Solidos</Link> </li>
+        <li><Link to={"./stickers"}>Stickers</Link></li>
+        <li><Link to={"./gifs"}>Gifs</Link></li>
         <li><select name="mas" id="mas">
           <option value="">Mas</option></select></li>
       </ul>

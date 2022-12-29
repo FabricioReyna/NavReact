@@ -5,7 +5,7 @@ import CardSolidos from "./CardSolidos";
 import { SOLIDOS } from "./data/solidos";
 import { useNavigate } from "react-router-dom";
 
-const Solidos = () =>{
+const Stickers = () =>{
 
     const navigate = useNavigate();
 
@@ -15,7 +15,7 @@ const Solidos = () =>{
   console.log(SOLIDOS)
     return (
         <main>
-        <h1 className="title-prin">Iconos Solidos</h1>
+        <h1 className="title-prin">Iconos Stickers</h1>
       <div className="contenido-main">
         
    
@@ -31,4 +31,4 @@ const Solidos = () =>{
       </main>
     );
 }
-export default Solidos
+export default Stickers

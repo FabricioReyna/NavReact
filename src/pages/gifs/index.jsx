@@ -1,26 +1,25 @@
 import React from "react";
 import './style.css'
 import { Link } from "react-router-dom";
-import CardSolidos from "./CardSolidos";
-import { SOLIDOS } from "./data/solidos";
 import { useNavigate } from "react-router-dom";
+import { STICKERS } from "./data/stickers";
+import CardStikers from "./CardStickers";
 
-const Solidos = () =>{
+const Gifs = () =>{
 
     const navigate = useNavigate();
 
   const OnHandleSelect = (product) => {
     navigate(`/product/${product.id}`, { state: product });
   };
-  console.log(SOLIDOS)
     return (
         <main>
-        <h1 className="title-prin">Iconos Solidos</h1>
+        <h1 className="title-prin">Iconos Gifs</h1>
       <div className="contenido-main">
         
    
-      {SOLIDOS.map((product) => (
-        <CardSolidos
+      { STICKERS.map((product) => (
+        <CardStikers
           product={product}
           key={product.name}
           onSelect={OnHandleSelect}
@@ -31,4 +30,4 @@ const Solidos = () =>{
       </main>
     );
 }
-export default Solidos
+export default Gifs
