@@ -21,8 +21,6 @@ const Under = () => {
         <li > <Link  to={"./categoria"}>Solidos</Link> </li>
         <li><Link to={"./stickers"}>Stickers</Link></li>
         <li><Link to={"./gifs"}>Gifs</Link></li>
-        <li><select name="mas" id="mas">
-          <option value="">Mas</option></select></li>
       </ul>
     </nav>
     

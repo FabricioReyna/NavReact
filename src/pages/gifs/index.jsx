@@ -2,8 +2,8 @@ import React from "react";
 import './style.css'
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import { STICKERS } from "./data/stickers";
-import CardStikers from "./CardStickers";
+import { GIFS } from "./data/gifs";
+import CardGifs from "./CardGifs";
 
 const Gifs = () =>{
 
@@ -18,8 +18,8 @@ const Gifs = () =>{
       <div className="contenido-main">
         
    
-      { STICKERS.map((product) => (
-        <CardStikers
+      { GIFS.map((product) => (
+        <CardGifs
           product={product}
           key={product.name}
           onSelect={OnHandleSelect}

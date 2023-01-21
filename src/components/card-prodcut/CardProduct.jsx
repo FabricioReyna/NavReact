@@ -9,8 +9,8 @@ const cardProduct = ({ product, onSelect }) => {
     <div className="card" onClick={ () => onSelect(product) }>
       <div className="fila">
         <div className="col">
-          <img src={imagen} alt={titulo} />
           <div className="card-content">
+          <img src={imagen} alt={titulo} className ="card-image" />
             <h3 className="card-title"> {titulo} </h3>
             <p className="card-descrip">{descripcion}</p>
             <span className="card-price">$ {precio}</span>

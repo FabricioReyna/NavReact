@@ -14,13 +14,7 @@ const Home = () => {
   };
 
   useEffect(() => {
-    const HandleScroll = (event) => {
-      console.log("Scrolling", window.scrollY);
-    };
-    window.addEventListener("scroll", HandleScroll);
-    return () => {
-      window.removeEventListener("scroll", HandleScroll);
-    };
+
   });
   return (
     <main>

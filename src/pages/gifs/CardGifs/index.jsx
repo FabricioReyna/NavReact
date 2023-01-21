@@ -1,12 +1,12 @@
 import React from "react";
-const CardStikers = ({product}) => {
+const CardGifs = ({product}) => {
     
     const { id, categoriaid, descripcion, titulo, imagen, precio, stock } = product;
     return(
         <div className="card" onClick={ () => onSelect(product) }>
         <div className="fila">
           <div className="col">
-            <img src={imagen} alt={titulo} />
+            <img src={imagen} alt={titulo} className ="card-image" />
             <div className="card-content">
               <h3 className="card-title"> {titulo} </h3>
               <p className="card-descrip">{descripcion}</p>
@@ -24,4 +24,4 @@ const CardStikers = ({product}) => {
       </div>
     )
 }
-export default CardStikers
+export default CardGifs

@@ -1,8 +1,8 @@
 import React from "react";
 import './style.css'
 import { Link } from "react-router-dom";
-import CardSolidos from "./CardSolidos";
-import { SOLIDOS } from "./data/solidos";
+import CardStickers from "./CardStikers";
+import { STICKERS } from "./data/stickers";
 import { useNavigate } from "react-router-dom";
 
 const Stickers = () =>{
@@ -12,15 +12,14 @@ const Stickers = () =>{
   const OnHandleSelect = (product) => {
     navigate(`/product/${product.id}`, { state: product });
   };
-  console.log(SOLIDOS)
     return (
         <main>
         <h1 className="title-prin">Iconos Stickers</h1>
       <div className="contenido-main">
         
    
-      {SOLIDOS.map((product) => (
-        <CardSolidos
+      {STICKERS.map((product) => (
+        <CardStickers
           product={product}
           key={product.name}
           onSelect={OnHandleSelect}
